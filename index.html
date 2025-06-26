@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Weekly Planner for Students</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Home Page -->
+        <div id="home-page" class="page active">
+            <div class="home-container">
+                <h1 class="logo">Smart Weekly Planner</h1>
+                <p class="tagline">Plan your week, track your tasks, and stay productive.</p>
+                <button id="start-planning" class="btn-primary">Start Planning</button>
+            </div>
+        </div>
+
+        <!-- Planner Page -->
+        <div id="planner-page" class="page">
+            <header class="planner-header">
+                <h1>Weekly Planner</h1>
+                <div class="header-actions">
+                    <button id="view-summary" class="btn-secondary">View Summary</button>
+                    <button id="reset-week" class="btn-warning">Reset Week</button>
+                </div>
+            </header>
+
+            <div class="week-container">
+                <!-- Days will be inserted here by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Summary Modal -->
+        <div id="summary-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Weekly Summary</h2>
+                <div class="summary-content">
+                    <div id="summary-stats"></div>
+                    <div id="summary-feedback"></div>
+                </div>
+                <button id="download-summary" class="btn-primary">Download Summary</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+                      </html>
